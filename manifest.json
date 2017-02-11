@@ -1,0 +1,15 @@
+{
+ "name": "Facebook Auto CW/TW",
+ "description": "Block the content you don't want to see without depending on unreliable CW and TW tags. Enter your own keywords to block.",
+ "version": "0.0.1",
+ "manifest_version": 2,
+
+  // Recommended
+  "default_locale": "en",
+  //"icons": {...}, create these later 
+  //"page_action": {...} 
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+ }
