@@ -99,6 +99,7 @@ $('#show').click(show)  ;
         whitelisted.splice(x,1);//splice mutates array, does not return anything
       }
     }
+    searchFile();
 }
 
 function show(){
