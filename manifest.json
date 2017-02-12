@@ -9,6 +9,12 @@
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
+
+ // "content_scripts": [{
+ // 	"js": ["https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js", "popup.js"],
+ // 	"matches": ["http://www.facebook.com/*", "https://www.facebook.com/*"] 
+ // }],
+ "content_security_policy":"script-src 'self' https://apis.google.com/*; object-src 'self'",
   "permissions": [
     "tabs",
     "bookmarks",

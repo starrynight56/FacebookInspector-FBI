@@ -8,7 +8,8 @@
  * @param {function(string)} callback - called when the URL of the current tab
  *   is found.  
  */
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+        <script src="popup.js"></script>
 
 function getCurrentTabUrl(callback) {
   // Query filter to be passed to chrome.tabs.query - see
