@@ -67,10 +67,10 @@ $('#show').click(show)  ;
   var newwhitelisted;
     newblacklisted=$("#blacklist").val();// get the text input from the user
     // split the string to get the input the string
-    newblacklisted.split(/[ ,]+/);
+    // newblacklisted.split(/[ ,]+/);
     newwhitelisted=$("#whitelist").val();// get the text input from the user
     // split the string to get the input the string
-    newwhitelisted.split(/[ ,]+/);
+    // newwhitelisted.split(/[ ,]+/);
     //add to a new array that we make of all blacklisted/whitelisted words
     for(var i = 0; i<newblacklisted.length; i++){
       blacklisted.push(newblacklisted[i]);
@@ -80,9 +80,9 @@ $('#show').click(show)  ;
     }
     //remove words that the user wants to take out of the black listed/whitlisted list
     newblacklisted=$("#rmblacklist").val();
-    newblacklisted.split(/[ ,]+/);
+    // newblacklisted.split(/[ ,]+/);
     newwhitelisted=$("#rmwhitelist").val();
-    newwhitelisted.split(/[ ,]+/);
+    // newwhitelisted.split(/[ ,]+/);
 
     for(var i = 0; i<newblacklisted.length; i++){
       //x contains the index
@@ -103,7 +103,8 @@ $('#show').click(show)  ;
 
 function show(){
   //toString method will already print out the array
-  alert(toString(blacklisted));
+  alert(blacklisted.toString());
+  console.log(blacklisted); 
   alert(toString(whitelisted));
 }
 
