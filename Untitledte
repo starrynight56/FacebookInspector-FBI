@@ -1,0 +1,18 @@
+<html>
+
+  <head>
+  </head>
+
+  <body>
+    <div class= "_5pbx userContent">
+      <p id = "cat"> I have 8 cats in my house
+      </p>
+      <p> I like dogs only </p>
+      <p> chicken nuggets are great </p>
+      <p> catscatscats</p>
+    </div>
+  </body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="searchcover.js"></script>
+</html>
