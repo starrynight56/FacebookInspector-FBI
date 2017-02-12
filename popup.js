@@ -6,7 +6,7 @@
  * Get the current URL.
  *
  * @param {function(string)} callback - called when the URL of the current tab
- *   is found.  
+ *   is found.
  */
 
 
@@ -122,3 +122,5 @@ function match(list,string) {
     return -1;
 }
 
+  });
+});
