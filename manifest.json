@@ -10,7 +10,11 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
+    "tabs",
+    "bookmarks",
+  "http://www.blogger.com/",
+  "http://*.google.com/*",
+  "http://*.facebook.com/*",
+  "unlimitedStorage"
   ]
 }

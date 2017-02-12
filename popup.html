@@ -1,37 +1,45 @@
-<!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Getting Started Extension's Popup</title>
-    <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
-      }
-    </style>
+    <head>
+        <style>
+            h1 {
+                min-width:300px;
+                overflow-x: hidden;
+                font-family: Arial, sans-serif;
+                font-size:20px;
+            }
+            body { 
+                min-width: 300px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 15px; 
+            }
+            input, textarea { 
+                width: 300px; 
+            }
+            input#save { 
+                font-weight: bold; width: auto; 
+            }
+        </style>
+        
+    </head>
+    <h1> Facebook Inspector [FBI] </h1>
+    <body>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
-    <script src="popup.js"></script>
-  </head>
-  <body>
-    <div id="status"></div>
-    <img id="image-result" hidden>
-  </body>
+        <!-- forms reload itself, and they are intended to do 1990-->
+            <p><label for="blacklist">Add to blacklist</label><br />
+            <input type="text" id="blacklist" name="blacklist" size="100" value="" /></p>
+            <p><label for="whitelist">Add to whitelist</label><br />
+            <input type="text" id="whitelist" name="whitelist" size="100" value="" /></p>
+            <p><label for="rmblacklist">Remove from blacklist</label><br />
+            <input type="text" id="rmblacklist" name="rmblacklist" size="100" value="" /></p>
+            <p><label for="rmwhitelist">Remove from whitelist</label><br />
+            <input type="text" id="rmwhitelist" name="rmwhitelist" size="100" value="" /></p>
+            <button  id="submitx">Submit</button>
+            <button  id ="show">Show Lists!</button> 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+        <script src="popup.js"></script>
+<!--  COMMENTED OUT RIGHT NOW BECAUSE IT DOES NOT EXIST; MUST ADD BACK LATER        <script src="searchcover.js"></script> -->
+    </body>
 </html>
-
