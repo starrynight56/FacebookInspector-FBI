@@ -1,5 +1,4 @@
 #Facebook Inspector
-Collaborators include: Nanxi liu, Adelaide Oh, Rosanne Hu and Kevin Chen 
+Collaborators include: Nanxi Liu, Adelaide Oh, Rosanne Hu, and Kevin Chen 
 FacebookInspector-FBI
-This will be a chrome extension that generates content and trigger warnings for indiviudals
-attempting to put overlays on projects. 
+Facebook Inspector [FBI] hides posts on Facebook with certain keywords, labelling them with flagged trigger warnings (TW) or content warnings (CW).
