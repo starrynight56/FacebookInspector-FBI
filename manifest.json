@@ -1,20 +1,30 @@
  {
   "manifest_version": 2,
 
-  "name": "Facebook Inspector",
-  "description": "Block the content you don't want to see without depending on unreliable CW and TW tags. Enter your own keywords to block.",
+  "name": "Facebook Inspector [FBI]",
+  "description": "FBI hides posts on Facebook with certain keywords, labelling them with flagged trigger warnings (TW) or content warnings (CW).",
+  "author": "Kevin Chen, Rosanne Hu, Adelaide Oh, Nanxi Liu",
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_title": "Facebook Inspector [FBI]",
     "default_popup": "popup.html"
   },
+  "icons": {
+  	"16": "icon_16.png",
+  	"19": "icon_19.png",
+  	"38": "icon_38.png",
+  	"48": "icon_48.png",
+  	"128": "icon_128.png"
+  },
+
+  
 
  // "content_scripts": [{
  // 	"js": ["https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js", "popup.js"],
  // 	"matches": ["http://www.facebook.com/*", "https://www.facebook.com/*"] 
  // }],
- "content_security_policy":"script-src 'self' https://apis.google.com/*; object-src 'self'",
+
   "permissions": [
     "tabs",
     "bookmarks",
@@ -23,4 +33,6 @@
   "http://*.facebook.com/*",
   "unlimitedStorage"
   ]
+
+  
 }

@@ -2,14 +2,23 @@
 <html>
     <head>
         <style>
+            h1 {
+                min-width: 300px;
+                overflow-x: hidden;
+                font-family: Arial, sans-serif;
+                font-size: 15 px;
+            }
             body { 
                 min-width: 300px; 
                 overflow-x: hidden; 
                 font-family: Arial, sans-serif; 
-                font-size: 20px; 
+                font-size: 15px;
+                background-image: url("http://i.imgur.com/4UnTNSb.png");
+                background-size: cover; 
             }
             input, textarea { 
-                width: 300px; 
+                width: 300px;
+                border-radius: 7px; 
             }
             input#save { 
                 font-weight: bold; width: auto; 
@@ -20,13 +29,13 @@
     <body>
 
         <!-- forms reload itself, and they are intended to do 1990-->
-            <p><label for="blacklist">Add to blacklist</label><br />
+            <p><label for="blacklist">Add to blacklist:</label><br />
             <input type="text" id="blacklist" name="blacklist" size="100" value="" /></p>
-            <p><label for="whitelist">Add to whitelist</label><br />
+            <p><label for="whitelist">Add to whitelist:</label><br />
             <input type="text" id="whitelist" name="whitelist" size="100" value="" /></p>
-            <p><label for="rmblacklist">Remove from blacklist</label><br />
+            <p><label for="rmblacklist">Remove from blacklist:</label><br />
             <input type="text" id="rmblacklist" name="rmblacklist" size="100" value="" /></p>
-            <p><label for="rmwhitelist">Remove from whitelist</label><br />
+            <p><label for="rmwhitelist">Remove from whitelist:</label><br />
             <input type="text" id="rmwhitelist" name="rmwhitelist" size="100" value="" /></p>
             <button  id="submitx">Submit</button>
             <button  id ="show">Show Lists!</button> 
