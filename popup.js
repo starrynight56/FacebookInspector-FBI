@@ -60,17 +60,17 @@ function getCurrentTabUrl(callback) {
  var blacklisted=[];
  var whitelisted=[];
 //actual function that submits data to array when "submit" is clicked.
-$('#submit').click(submit);
+$('#submitx').click(submitx);
 $('#show').click(show)  ;
- function submit() {
+ function submitx() {
   var newblacklisted;
   var newwhitelisted;
     newblacklisted=$("#blacklist").val();// get the text input from the user
     // split the string to get the input the string
-    // newblacklisted.split(/[ ,]+/);
+    newblacklisted = newblacklisted.split(/[ ,]+/);
     newwhitelisted=$("#whitelist").val();// get the text input from the user
     // split the string to get the input the string
-    // newwhitelisted.split(/[ ,]+/);
+    newwhitelisted = newwhitelisted.split(/[ ,]+/);
     //add to a new array that we make of all blacklisted/whitelisted words
     for(var i = 0; i<newblacklisted.length; i++){
       blacklisted.push(newblacklisted[i]);
@@ -80,23 +80,23 @@ $('#show').click(show)  ;
     }
     //remove words that the user wants to take out of the black listed/whitlisted list
     newblacklisted=$("#rmblacklist").val();
-    // newblacklisted.split(/[ ,]+/);
+    newblacklisted = newblacklisted.split(/[ ,]+/);
     newwhitelisted=$("#rmwhitelist").val();
-    // newwhitelisted.split(/[ ,]+/);
+    newwhitelisted = newwhitelisted.split(/[ ,]+/);
 
     for(var i = 0; i<newblacklisted.length; i++){
       //x contains the index
       var x = match(blacklisted,newblacklisted[i])
       if(x >-1){
         //takes out the word and places everything in a new array
-        blacklisted=blacklisted.splice(x,1);
+        blacklisted.splice(x,1);//splice mutates array, does not return anything
       }
     }
 
     for(var i = 0; i<newwhitelisted.length; i++){
       var x = match(whitelisted,newwhitelisted[i])
       if(x >-1){
-        whitelisted=whitelisted.splice(x,1);
+        whitelisted.splice(x,1);//splice mutates array, does not return anything
       }
     }
 }
